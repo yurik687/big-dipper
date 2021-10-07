@@ -39,5 +39,4 @@ COPY --from=1 $SCRIPTS_FOLDER $SCRIPTS_FOLDER/
 COPY --from=1 $APP_BUNDLE_FOLDER/bundle $APP_BUNDLE_FOLDER/bundle/
 
 ENTRYPOINT ["/docker/entrypoint.sh"]
-
 CMD ["node", "main.js"]
